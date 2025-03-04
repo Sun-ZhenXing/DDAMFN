@@ -1,0 +1,25 @@
+[project]
+name = "ddamfn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.10.1",
+    "onnx>=1.17.0",
+    "onnxruntime-gpu>=1.20.1",
+    "pandas>=2.2.3",
+    "scikit-learn>=1.6.1",
+    "torch==2.6.0+cu126",
+    "torchaudio==2.6.0+cu126",
+    "torchvision==0.21.0+cu126",
+    "tqdm>=4.67.1",
+]
+
+[tool.uv]
+index-strategy = "unsafe-best-match"
+index-url = "https://pypi.org/simple"
+extra-index-url = [
+    "https://pypi.org/simple",
+    "https://download.pytorch.org/whl/cu126",
+]
